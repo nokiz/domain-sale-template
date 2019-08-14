@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Domain for sale</title>
+	<script
+			  src="https://code.jquery.com/jquery-3.4.1.min.js"
+			  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			  crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<style type="text/css" media="screen">
+		@import url('https://fonts.googleapis.com/css?family=Pacifico');
+		body {
+			background-image: linear-gradient(167deg, #f7f7f7 25%, #6159ff 25%, #6159ff 50%, #f7f7f7 50%, #f7f7f7 75%, #6159ff 75%, #6159ff 100%);
+			background-size: 266.72px 61.58px;
+		}
+		div { 
+			text-align: center;
+			margin-top: 10%;
+			background-color: white;
+			height: 300px;
+			margin-left: 25%;
+			margin-right: 25%;
+			-webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+			-moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+			box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.75);
+			border-radius: 20px 20px 20px 20px;
+			-moz-border-radius: 20px 20px 20px 20px;
+			-webkit-border-radius: 20px 20px 20px 20px;
+		}
+		
+		#text{
+		  font-family: "Pacifico";
+		  text-align: center;
+		  font-size: 50px;
+		  color: #f1615a;
+		  text-shadow: rgb(0, 0, 0) 2px 2px 2px;
+		  padding-top: 30px;
+		}
+		#myButton {
+			-moz-box-shadow:inset 0px 10px 14px -7px #3e7327;
+			-webkit-box-shadow:inset 0px 10px 14px -7px #3e7327;
+			box-shadow:inset 0px 10px 14px -7px #3e7327;
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+			background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+			background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+			background:-o-linear-gradient(top, #77b55a 5%, #72b352 100%);
+			background:-ms-linear-gradient(top, #77b55a 5%, #72b352 100%);
+			background:linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#72b352',GradientType=0);
+			background-color:#77b55a;
+			-moz-border-radius:30px;
+			-webkit-border-radius:30px;
+			border-radius:30px;
+			border:2px solid #4b8f29;
+			display:inline-block;
+			cursor:pointer;
+			color:#ffffff;
+			font-family: "Pacifico";
+			font-size:40px;
+			padding:30px 75px;
+			text-decoration:none;
+			text-shadow:0px 1px 0px #132904;
+			margin-top: 30px;
+		}
+		#myButton:hover {
+			background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #77b55a), color-stop(1, #72b352));
+			background:-moz-linear-gradient(top, #77b55a 5%, #72b352 100%);
+			background:-webkit-linear-gradient(top, #77b55a 5%, #72b352 100%);
+			background:-o-linear-gradient(top, #77b55a 5%, #77b55a 100%);
+			background:-ms-linear-gradient(top, #77b55a 5%, #77b55a 100%);
+			background:linear-gradient(to bottom, #77b55a 5%, #77b55a 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77b55a', endColorstr='#77b55a',GradientType=0);
+			background-color:#77b55a;
+			text-decoration:none;
+		}
+		#myButton:active {
+			position:relative;
+			top:1px;
+		}
+	</style>
+</head>
+<body>
+
+	<div>
+		<h1 id="text">This domain is for sale.</h1>
+		<a href="#" name="emailLink" id="myButton" >Make an offer!</a>
+	</div>
+	
+</body>
+<script>
+  $('#myButton').on('click', function (event) {
+      event.preventDefault();
+    // Break your e-mail into pieces for evading spambots
+    var e1 = 't';
+    var e2 = 'e';
+    var e3 = 's';
+    var e4 = 't';
+    var e5 = 'gm';
+    var e6 = 'ail';
+    var e7 = 'com';
+    var e8 = '@';
+    var e9 = '.';
+    var broken_mail = e1 + e2 + e9 + e3 + e4 + e8 + e5 + e6 + e9 + e7;
+    var subject = 'Offer for buying mydomain.com'; // Change to your domain
+    var emailBody = 'Write here your offer :)';
+    window.location = 'mailto:' + broken_mail + '?subject=' + subject + '&body=' +   emailBody;
+  });
+</script>
+</html>
